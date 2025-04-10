@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 380px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -12px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.valid {
+    color: green;
+}
+
+.rules {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.rules li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.rules .material-symbols-outlined {
+    font-size: 18px;
+}
+
+.password-meter {
+    height: 8px;
+    width: 100%;
+    background: #eee;
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.password-strength {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.password-strength.weak { 
+    width: 33%; 
+    background-color: red; 
+}
+
+.password-strength.medium { 
+    width: 66%; 
+    background-color: orange; 
+}
+
+.password-strength.strong { 
+    width: 100%; 
+    background-color: green; 
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.strength-label {
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    color: #888;
+}
+
+.strength-label.weak {
+    color: red;
+}
+
+.strength-label.medium {
+    color: orange;
+}
+
+.strength-label.strong {
+    color: green;
+}  
+
+button:hover {
+    background: #0056b3;
+}
