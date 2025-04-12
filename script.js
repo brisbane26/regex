@@ -89,9 +89,12 @@ function submitForm() {
         Swal.fire({
             icon: 'success',
             title: 'Berhasil!',
+            position: "top-center",
             html: `<p><strong>Email:</strong> ${email}</p>
                    <p><strong>Password:</strong> ${password}</p>`,
-            confirmButtonText: 'Oke'
+            confirmButtonText: 'Oke',
+            heightAuto: false,
+            scrollbarPadding: false
         });
     } else {
         document.getElementById("password-error").style.display = "block";
